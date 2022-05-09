@@ -120,8 +120,15 @@
                         <br><br>
                         <b>Date : 7th and 8th May</b> 
                     </p>
-                    <a href="tech_camp.html"><button style="border-radius: 45px;" class="button button--rayen button--border-medium button--text-thin button--size-l button--inverted" data-text="Loading..."><span>Register</span></button>
-                    </a>
+                    <!-- <a href="tech_camp.html"><button style="border-radius: 45px;" class="button button--rayen button--border-medium button--text-thin button--size-l button--inverted" data-text="Loading..."><span>Register</span></button>
+                    </a> -->
+                    <a href ="#" class="green-neon-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        registration
+                      </a>
                 </div>
             </div>
         </div>
@@ -252,38 +259,40 @@
                 window.addEventListener('scroll', function () {
                     let value = window.scrollY;
                     let value2 = value;
-                    console.log(value);
-                    bird2_mobile.style.top = 464 + value * -0.1 + 'px';
-                    bird2_mobile.style.left = 95 + value * -0.3 + 'px';
+                    if (value<820) {
+                        bird2_mobile.style.top = 464 + value * -0.1 + 'px';
+                        bird2_mobile.style.left = 95 + value * -0.3 + 'px';
 
-                    bird_lt_mobile.style.top = 502 + value * -0.1 + 'px';
-                    bird_lt_mobile.style.left = 257 + value * 0.3 + 'px';
-                    // aagneya.style.right =value * 0.75 + 'px';
+                        bird_lt_mobile.style.top = 502 + value * -0.1 + 'px';
+                        bird_lt_mobile.style.left = 257 + value * 0.3 + 'px';
+                        // aagneya.style.right =value * 0.75 + 'px';
 
-                    clg.style.bottom = value * -0.03 + '%';
-                    tree_lt.style.top = 260 + value * 0.75 + 'px';
-                    bg.style.bottom = value * 0.10 + 'px';
+                        clg.style.bottom = value * -0.03 + '%';
+                        tree_lt.style.top = 260 + value * 0.75 + 'px';
+                        bg.style.bottom = value * 0.10 + 'px';
 
-                    cloud_rt.style.left = value * 0.75 + 'px';
-                    cloud_lt.style.left = value * -0.75 + 'px';
+                        cloud_rt.style.left = value * 0.75 + 'px';
+                        cloud_lt.style.left = value * -0.75 + 'px';
 
-                    hill_1.style.bottom = 50 + value * 0.03 + 'vw';
-                    hill_2.style.bottom = 78 - value * 0.1 + 'px';
-                    hill_3_lt.style.bottom = 175 + value * -0.2 + 'px';
-                    hill_4_lt.style.bottom = 37 - value * 0.03 + 'vw';
-                    hill_4_rt.style.bottom = 58 - value * 0.03 + 'vw';
-                    hill_5.style.left = value * -0.3 + 'px';
-                    hill_5.style.bottom = value * -0.1 + 'px';
-                    aagneya.style.top = 43 + value * 0.1 + '%';
+                        hill_1.style.bottom = 50 + value * 0.03 + 'vw';
+                        hill_2.style.bottom = 78 - value * 0.1 + 'px';
+                        hill_3_lt.style.bottom = 175 + value * -0.2 + 'px';
+                        hill_4_lt.style.bottom = 37 - value * 0.03 + 'vw';
+                        hill_4_rt.style.bottom = 58 - value * 0.03 + 'vw';
+                        hill_5.style.left = value * -0.3 + 'px';
+                        hill_5.style.bottom = value * -0.1 + 'px';
+                        aagneya.style.top = 43 + value * 0.1 + '%';
 
-                    if( value>=2173){
-                        value = value-2173
-                        hori_kuttan.style.left =  880.5 + value * -0.90 + 'px';
+                        if( value>=2173){
+                            value = value-2173
+                            hori_kuttan.style.left =  880.5 + value * -0.90 + 'px';
+                        }
+                        if( value2>=1479){
+                            value2 = value2-1479
+                            hori_kutti.style.left =  -898.5999999999999 + value2 * 0.90 + 'px';
+                        }
                     }
-                    if( value2>=1479){
-                        value2 = value2-1479
-                        hori_kutti.style.left =  -898.5999999999999 + value2 * 0.90 + 'px';
-                    }
+
                 })
 
                 animation.add({
@@ -313,42 +322,44 @@
                 window.addEventListener('scroll', function () {
                     let value = window.scrollY;
                     let value2 = value;
-                    console.log(value);
-                    bird2.style.top = value * -1.5 + 'px';
-                    bird2.style.left = value * -5 + 'px';
+                    if (value<909.0908813476562) {
+                        bird2.style.top = value * -1.5 + 'px';
+                        bird2.style.left = value * -5 + 'px';
 
-                    bird_lt.style.top = value * -1.5 + 'px';
-                    bird_lt.style.left = value * 5 + 'px';
+                        bird_lt.style.top = value * -1.5 + 'px';
+                        bird_lt.style.left = value * 5 + 'px';
 
-                    hill.style.left = value * 0.75 + 'px';
-                    aagneya.style.right = value * 0.75 + 'px';
+                        hill.style.left = value * 0.75 + 'px';
+                        aagneya.style.right = value * 0.75 + 'px';
 
-                    clg.style.bottom = value * -0.03 + '%';
-                    tree_lt.style.bottom = value * -0.75 + 'px';
-                    tree_rt.style.bottom = value * -0.75 + 'px';
-                    bg.style.bottom = value * 0.10 + 'px';
+                        clg.style.bottom = value * -0.03 + '%';
+                        tree_lt.style.bottom = value * -0.75 + 'px';
+                        tree_rt.style.bottom = value * -0.75 + 'px';
+                        bg.style.bottom = value * 0.10 + 'px';
 
-                    bus.style.bottom = value * -0.40 + 'px';
-                    building_rt.style.bottom = value * -0.30 + 'px';
-                    building_lt.style.bottom = value * -0.30 + 'px';
+                        bus.style.bottom = value * -0.40 + 'px';
+                        building_rt.style.bottom = value * -0.30 + 'px';
+                        building_lt.style.bottom = value * -0.30 + 'px';
 
-                    cloud_rt.style.left = value * 0.75 + 'px';
-                    cloud_lt.style.left = value * -0.75 + 'px';
+                        cloud_rt.style.left = value * 0.75 + 'px';
+                        cloud_lt.style.left = value * -0.75 + 'px';
 
-                    hill_1.style.bottom = value * 0.30 + 'px';
-                    hill_2.style.bottom = value * 0.40 + 'px';
-                    hill_3_lt.style.bottom = value * 0.20 + 'px';
-                    hill_4_lt.style.bottom = value * 0.20 + 'px';
-                    hill_4_rt.style.bottom = value * 0.10 + 'px';
-                    hill_5.style.bottom = -273 + value * 0.50 + 'px';
-                    if( value>=1000){
-                        value = value-1000
-                        hori_kuttan.style.left =  900 + value * -0.90 + 'px';
+                        hill_1.style.bottom = value * 0.30 + 'px';
+                        hill_2.style.bottom = value * 0.40 + 'px';
+                        hill_3_lt.style.bottom = value * 0.20 + 'px';
+                        hill_4_lt.style.bottom = value * 0.20 + 'px';
+                        hill_4_rt.style.bottom = value * 0.10 + 'px';
+                        hill_5.style.bottom = -273 + value * 0.50 + 'px';
+                            if( value>=1000){
+                                value = value-1000
+                                hori_kuttan.style.left =  900 + value * -0.90 + 'px';
+                            }
+                            if( value2>=742.4000244140625){
+                                value2 = value2-742.4000244140625
+                                hori_kutti.style.left =  -810.5999999999999 + value2 * 0.90 + 'px';
+                            }
                     }
-                    if( value2>=742.4000244140625){
-                        value2 = value2-742.4000244140625
-                        hori_kutti.style.left =  -810.5999999999999 + value2 * 0.90 + 'px';
-                    }
+                  
 
                     
 
