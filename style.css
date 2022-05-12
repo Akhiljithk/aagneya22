@@ -13,6 +13,7 @@ body{
     background: #110d25 !important;
     min-height: 100vh;
     overflow-x: hidden;
+    transition: 0s linear;
 }
 
 #header{

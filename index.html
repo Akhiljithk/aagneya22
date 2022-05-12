@@ -51,29 +51,29 @@
         <div id='stars3'></div>
     </div>
     <section>
-        <img src="images/bg.png" id="bg" style="opacity: 0.3;">
-        <img src="images/cloud_lt.png" id="cloud_lt">
-        <img src="images/cloud_rt.png" id="cloud_rt">
-        <img src="images/hill_1.png" id="hill_1">
-        <img src="images/hill_2.png" id="hill_2">
-        <img src="images/hill_3_lt.png" id="hill_3_lt">
-        <img src="images/hill_4_lt.png" id="hill_4_lt">
-        <img src="images/hill_4_rt.png" id="hill_4_rt">
+        <img src="webp/bg.webp" id="bg" style="opacity: 0.3;">
+        <img src="webp/cloud_lt.webp" id="cloud_lt">
+        <img src="webp/cloud_rt.webp" id="cloud_rt">
+        <img src="webp/hill_1.webp" id="hill_1">
+        <img src="webp/hill_2.webp" id="hill_2">
+        <img src="webp/hill_3_lt.webp" id="hill_3_lt">
+        <img src="webp/hill_4_lt.webp" id="hill_4_lt">
+        <img src="webp/hill_4_rt.webp" id="hill_4_rt">
         <h2 id="aagneya">aagneya'22</h2>
-        <img src="images/hill_5.png" id="hill_5">
-        <img src="images/hill.png" id="hill">
-        <img src="images/road.png" id="road">
-        <img src="images/building_lt.png" id="building_lt">
-        <img src="images/building_rt.png" id="building_rt">
-        <img src="images/tree_lt.png" id="tree_lt">
-        <img src="images/clg.png" id="clg">
-        <img src="images/bus.png" id="bus">
-        <img src="images/tree_rt.png" id="tree_rt">
-        <img src="images/bird_lt.png" id="bird2">
-        <img src="images/bird_rt.png" id="bird_lt">
-        <img src="images/bird_rt_mobile.png" id="bird_lt_mobile">
-        <img src="images/bird_lt_mobile.png" id="bird2_mobile">
-        <img src="images/mobileLogo.png" id="mobileLogo">
+        <img src="webp/hill_5.webp" id="hill_5">
+        <img src="webp/hill.webp" id="hill">
+        <img src="webp/road.webp" id="road">
+        <img src="webp/building_lt.webp" id="building_lt">
+        <img src="webp/building_rt.webp" id="building_rt">
+        <img src="webp/tree_lt.webp" id="tree_lt">
+        <img src="webp/clg.webp" id="clg">
+        <img src="webp/bus.webp" id="bus">
+        <img src="webp/tree_rt.webp" id="tree_rt">
+        <img src="webp/bird_lt.webp" id="bird2">
+        <img src="webp/bird_rt.webp" id="bird_lt">
+        <img src="webp/bird_rt_mobile.webp" id="bird_lt_mobile">
+        <img src="webp/bird_lt_mobile.webp" id="bird2_mobile">
+        <img src="webp/mobileLogo.webp" id="mobileLogo">
     </section>
     <!-- <div class="logo-section">
         <img src="img/logo1.png" class="aagneya-logo1" id="aagneya-logo1" alt="">
@@ -322,7 +322,8 @@
                 window.addEventListener('scroll', function () {
                     let value = window.scrollY;
                     let value2 = value;
-                    if (value<909.0908813476562) {
+                    console.log(value);
+                    if (value<636.3636474609375) {
                         bird2.style.top = value * -1.5 + 'px';
                         bird2.style.left = value * -5 + 'px';
 
@@ -332,7 +333,7 @@
                         hill.style.left = value * 0.75 + 'px';
                         aagneya.style.right = value * 0.75 + 'px';
 
-                        clg.style.bottom = value * -0.03 + '%';
+                        
                         tree_lt.style.bottom = value * -0.75 + 'px';
                         tree_rt.style.bottom = value * -0.75 + 'px';
                         bg.style.bottom = value * 0.10 + 'px';
@@ -350,17 +351,19 @@
                         hill_4_lt.style.bottom = value * 0.20 + 'px';
                         hill_4_rt.style.bottom = value * 0.10 + 'px';
                         hill_5.style.bottom = -273 + value * 0.50 + 'px';
-                            if( value>=1000){
-                                value = value-1000
-                                hori_kuttan.style.left =  900 + value * -0.90 + 'px';
-                            }
-                            if( value2>=742.4000244140625){
-                                value2 = value2-742.4000244140625
-                                hori_kutti.style.left =  -810.5999999999999 + value2 * 0.90 + 'px';
-                            }
+                    }
+                    if (value<909.0908813476562) {
+                            clg.style.bottom = value * -0.03 + '%';
                     }
                   
-
+                    if( value>=1000){
+                        value = value-1000
+                        hori_kuttan.style.left =  900 + value * -0.90 + 'px';
+                     }
+                    if( value2>=742.4000244140625){
+                        value2 = value2-742.4000244140625
+                        hori_kutti.style.left =  -810.5999999999999 + value2 * 0.90 + 'px';
+                    }
                     
 
                     // logoImg.style.bottom = value * 0.75 + 'px'; 
