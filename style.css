@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 html{
     overflow-x: hidden;
@@ -14,6 +13,7 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
     transition: 0s linear;
+
 }
 
 #header{
@@ -131,7 +131,9 @@ section img{
 .sec{
     position: relative;
     padding: 100px;
-    background: #011227;
+    /* background: radial-gradient(circle, #240015 0%, #12000b 100%); */
+    
+    z-index: 10;
 }
 .sec h2{
     font-size: 3em;
@@ -155,13 +157,13 @@ section::before{
     z-index: 10;
 }
 section::after {
-    content: '';
+    content: "";
     position: absolute;
-    bottom: -397px;
-    left: 0;
+    bottom: -1064px;
+    left: 0px;
     width: 100%;
-    height: 398px;
-    background: linear-gradient(#011227,transparent);
+    height: 1065px;
+    background: linear-gradient(rgb(1, 18, 39), #110d25);
     z-index: 10;
 }
 .logo-section{
@@ -479,8 +481,77 @@ p{
     50%,100%{bottom :100%}
   }
 
-
-
+  /* neon */
+  .neon {
+    color: #d6e2ff;
+    text-shadow: 0px 1px 2px #4a67ff, 0px -1px 2px #3f5dff, 1px 0px 2px #3f5dff, -1px 0px 2px #3f5dff, 1px 1px 2px #4361ff, -1px -1px 2px #4562ff, 1px -1px 2px #3f5dff, -1px 1px 2px #4360ff, 0px 0px 10px #3f5dffe0, 0px 0px 20px #3f5dffcc, 0px 0px 30px #3f5dffb0, 0px 0px 40px #3f5dff9e, 0px 0px 50px #3f5dff85, 0px 0px 60px #3f5dff61, 0px 0px 70px #3f5dff47;
+    -webkit-animation: flickerAnimation 2s infinite;
+    animation: flickerAnimation 2s infinite;
+  }
+  
+  @-webkit-keyframes flickerAnimation {
+    0% {
+      opacity: 1;
+    }
+    31.8% {
+      opacity: 0.9;
+    }
+    32% {
+      opacity: 0;
+    }
+    32.2% {
+      opacity: 0.9;
+    }
+    94.6% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 0;
+    }
+    95.4% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes flickerAnimation {
+    0% {
+      opacity: 1;
+    }
+    31.8% {
+      opacity: 0.9;
+    }
+    32% {
+      opacity: 0;
+    }
+    32.2% {
+      opacity: 0.9;
+    }
+    94.6% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 0;
+    }
+    95.4% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes hueRotate{
+    0%  {
+      filter: hue-rotate(0deg);
+    }
+    50%  {
+      filter: hue-rotate(-120deg);
+    }
+    100%  {
+      filter: hue-rotate(0deg);
+    }
+  }
 
 
 
