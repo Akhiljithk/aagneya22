@@ -483,7 +483,7 @@ p{
 
   /* neon */
   .neon {
-    color: #d6e2ff;
+    color: #97b1f1;
     text-shadow: 0px 1px 2px #4a67ff, 0px -1px 2px #3f5dff, 1px 0px 2px #3f5dff, -1px 0px 2px #3f5dff, 1px 1px 2px #4361ff, -1px -1px 2px #4562ff, 1px -1px 2px #3f5dff, -1px 1px 2px #4360ff, 0px 0px 10px #3f5dffe0, 0px 0px 20px #3f5dffcc, 0px 0px 30px #3f5dffb0, 0px 0px 40px #3f5dff9e, 0px 0px 50px #3f5dff85, 0px 0px 60px #3f5dff61, 0px 0px 70px #3f5dff47;
     -webkit-animation: flickerAnimation 2s infinite;
     animation: flickerAnimation 2s infinite;
@@ -553,7 +553,12 @@ p{
     }
   }
 
-
+.pro-show{
+    margin-top: 2rem;
+}
+.pro-show span{
+    text-align: center;
+}
 
 
 
