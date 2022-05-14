@@ -30,7 +30,7 @@ a[href] {
 
 a[href], a[href]:link, a[href]:visited, a[href]:active {
   text-decoration: none;
-  color: #2774d8;
+  color: #d8276c;
   text-shadow: 2px 2px 2px #070c11;
   padding-bottom: 3px;
   font-weight: bold;
@@ -65,9 +65,14 @@ a[href]:hover::after {
 }
 
 article.card {
-  margin: 20px;
-  width: 259px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  left: 50%;
+  width: 350px;
   height: 350px;
+  -webkit-transform: translate(-50%, -50%) translateZ(0);
+          transform: translate(-50%, -50%) translateZ(0);
   border-radius: 3px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
@@ -77,12 +82,13 @@ article.card {
 article.card .thumb {
   width: auto;
   height: 260px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png") no-repeat center;
   background-size: cover;
   border-radius: 3px;
 }
 
 article.card .infos {
-  width: 260px;
+  width: auto;
   height: 350px;
   position: relative;
   padding: 14px 24px;
@@ -94,6 +100,7 @@ article.card .infos {
 article.card .infos .title {
   position: relative;
   margin: 10px 0;
+  letter-spacing: 3px;
   color: #152536;
   font-family: "Grotesque Black", sans-serif;
   font-size: 1rem;
@@ -103,13 +110,13 @@ article.card .infos .title {
 
 article.card .infos .flag {
   position: absolute;
-  top: 105%;
+  top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 35px;
-  height: 56px;
-  /* background: url("img/logo.png") no-repeat top right; */
+  height: 23px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/flag.png") no-repeat top right;
   background-size: 100% auto;
   display: inline-block;
 }
@@ -134,7 +141,7 @@ article.card .infos .seats {
 
 article.card .infos .txt {
   font-family: "Merriweather", sans-serif;
-  line-height: 1.5;
+  line-height: 2;
   font-size: .95rem;
   color: rgba(21, 37, 54, 0.7);
   opacity: 0;
@@ -169,24 +176,3 @@ article.card:hover .infos .seats, article.card:hover .infos .txt, article.card:h
   opacity: 1;
 }
 /*# sourceMappingURL=card.css.map */
-
-.tech-camp-card-wrapper{
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 12%;
-}
-@media(max-width: 459px){
-  .tech-camp-card-wrapper{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: unset;
-  }
-}
