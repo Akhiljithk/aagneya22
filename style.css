@@ -569,12 +569,14 @@ p{
     width: 90%;
     padding: 31px;
     height: auto;
+    max-height: 90vh;
     box-shadow: 0 5px 30px rgb(0 0 0 / 30%);
     background: rgb(22, 18, 37);
 	visibility: hidden;
 	opacity: 0;
 	transition: 0.5s;
     color: #ffff;
+    overflow-y: scroll;
 }
 #pop-up h2{
     margin-bottom: 20px;
@@ -589,6 +591,8 @@ p{
     display: block;
     margin: 10px;
     text-align: center;
+    color: #000;
+    font-weight: bold;
 }
 
 
@@ -604,6 +608,64 @@ p{
 	pointer-events: none;
 	user-select: none;
 }
+.popup-content{
+    margin-top: 25px;
+}
+@keyframes animateGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes textColor {
+    0% {
+      color: #7e0fff;
+    }
+    50% {
+      color: #0fffc1;
+    }
+    100% {
+      color: #7e0fff;
+    }
+  }
+  .pop-up:after {
+    position: absolute;
+    content: "";
+    top: 5vw;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.75);
+    -webkit-filter: blur(5vw);
+    -moz-filter: blur(5vw);
+    -ms-filter: blur(5vw);
+    filter: blur(5vw);
+    background: linear-gradient(270deg, #0fffc1, #7e0fff);
+    background-size: 200% 200%;
+    animation: animateGlow 10s ease infinite;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
