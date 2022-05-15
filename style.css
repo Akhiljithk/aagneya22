@@ -556,6 +556,7 @@ p{
     background: transparent;
     border: none;
     padding: 9px 0;
+    cursor: pointer;
   }
   .popup-btn:hover{
     color: #ffffff;

@@ -54,7 +54,7 @@
       </svg>
     </div>
   </div>
-  
+
     <header id="header">
         <a href="#" class="logo"></a>
         <!-- <div class="toggle"></div> -->
@@ -227,7 +227,7 @@
       <h1 class="hero-title"><span class="hero-title-text"><strong>PRO SHOWS</strong></h1>
 
         <!-- anima  -->
-        <div class="anima-wrapper">
+        <!-- <div class="anima-wrapper">
           <div class="swiper-wrapper">
             <div class="anima-slide">
                 <div class="untitled">
@@ -236,14 +236,12 @@
                           <img src="proshow/1.jpeg" alt=""  class="anima-image">
 
                             <div class="untitled__slideContent">
-                                <!-- <span>London</span> 
-                                <span>Scout</span> -->
                                 <a class="button" href="https://unsplash.com/@scoutthecity" target="/black">Book tickets</a>
                             </div>
                         </div>
                           <div class="untitled__slide">
                             <img src="proshow/1.jpeg" alt=""  class="anima-image">
-                              <!-- <div class="untitled__slideBg"></div> -->
+                              
                               <div class="untitled__slideContent">
                             
                                   <a class="button" href="https://unsplash.com/@madbyte" target="/black">Book tickets</a>
@@ -251,14 +249,14 @@
                           </div>
                           <div class="untitled__slide">
                             <img src="proshow/1.jpeg" alt=""  class="anima-image">
-                              <!-- <div class="untitled__slideBg"></div> -->
+                              
                               <div class="untitled__slideContent">
                                   <a class="button" href="https://unsplash.com/@maicoamorim" target="/black">Book tickets</a>
                               </div>
                           </div>
                           <div class="untitled__slide">
                             <img src="proshow/1.jpeg" alt=""  class="anima-image">
-                              <!-- <div class="untitled__slideBg"></div> -->
+                              
                               <div class="untitled__slideContent">
                                   <a class="button" href="https://unsplash.com/@mariocalvo" target="/black">Book tickets</a>
                               </div>
@@ -267,18 +265,65 @@
                     <div class="untitled__shutters"></div>
                 </div>
             </div>
-          </div>
-          <!-- <div class="swiper-button-next"></div>
+          </div> -->
+
+          <div class="swiper mySwiper" id="blur" style="margin-bottom: 4rem;
+        }">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+      
+                <div class="st-card-wrapper">
+                  <div class="day-night-transition">
+                    <div class="heading">
+                      <p class="smallnumber"> proshow #1</p>
+                      <h1 class="st-h1"></h1>
+                    </div>
+                      <img src="proshow/1.jpeg" alt="">
+                    <div class="explanation">
+                    <p>
+                      Music is lifeblood to this virtuoso.  
+                        <br>
+                        His beats sync with your heart<br>
+                        His rhythm touches your soul<br>
+                        He creates the strongest form of magic that hymns through the heart of every melody lovers...
+                      <!-- <span class="accent">keyframes</span> -->
+                    </p>
+                    </div>
+                    <button onclick="showEvent_1_Details()" class="popup-btn">Show more</button>
+                  </div>
+                </div>
+                
+      
+              </div>
+              <div class="swiper-slide">
+                
+                <div class="st-card-wrapper">
+                  <div class="solar-system-animation">
+                    <div class="heading">
+                      <p class="smallnumber"> proshow #1</p>
+                      <h1 class="st-h1"></h1>
+                    </div>
+                      <img src="proshow/1.jpeg" alt="">
+                    <div class="explanation">
+                      <p>
+                        Music is lifeblood to this virtuoso.  
+                          <br>
+                          His beats sync with your heart<br>
+                          His rhythm touches your soul<br>
+                          He creates the strongest form of magic that hymns through the heart of every melody lovers...
+                        <!-- <span class="accent">keyframes</span> -->
+                      </p>
+                    </div>
+                    <button onclick="showEvent_1_Details()" class="popup-btn">Show more</button>
+                  </div>
+                </div>
+                
+              </div>
+      
+            </div>
+            <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div> -->
-          </div>
-          <div style="display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: 21px;">
-            <button style="background: #fff;
-            padding: 6px;
-            border: none;" onclick="changeSlide()">NEXT</button>
+            <!-- <div class="swiper-pagination"></div> -->
           </div>
 
     </div>
@@ -321,28 +366,21 @@
               </div>
                 <img src="proshow/1.jpeg" alt="">
               <div class="explanation">
-              <p> Change one (or many) properties between many different states and build loops using <span class="accent">keyframes</span>.</p>
+                <p>
+                  Music is lifeblood to this virtuoso.  
+                    <br>
+                    His beats sync with your heart<br>
+                    His rhythm touches your soul<br>
+                    He creates the strongest form of magic that hymns through the heart of every melody lovers...
+                  <!-- <span class="accent">keyframes</span> -->
+                </p>
               </div>
+              <button onclick="showEvent_1_Details()" class="popup-btn">Show more</button>
             </div>
           </div>
           
         </div>
-        <div class="swiper-slide">
-          
-          <div class="st-card-wrapper">
-            <div class="solar-system-animation">
-              <div class="heading">
-                <p class="smallnumber"> proshow #1</p>
-                <h1 class="st-h1">JUNE 3</h1>
-              </div>
-                <img src="proshow/1.jpeg" alt="">
-              <div class="explanation">
-              <p> Change one (or many) properties between many different states and build loops using <span class="accent">keyframes</span>.</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
+
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -689,7 +727,7 @@
       setTimeout(function(){
         console.log("tada");
         document.getElementById("loader-body").style.display="none";
-      }, 5000);  
+      }, 1000);  
 
     </script>
 </body>

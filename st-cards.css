@@ -660,15 +660,19 @@
 @media (min-width: 650px) {
   .solar-system-animation,
 .day-night-transition {
-    height: 50vh;
-    width: 50%;
+    /* height: 50vh;
+    width: 50%; */
+  }
+  .popup-btn{
+    padding: 18px 0px;
+    padding-top: 28px;
   }
 }
 @media (min-width: 850px) {
   .solar-system-animation,
 .day-night-transition {
-    height: 65vh;
-    width: 50%;
+    /* height: 65vh;
+    width: 50%; */
     max-width: 600px;
     margin-top: 0;
   }
@@ -695,6 +699,9 @@ svg.transition-scene {
 
 .explanation {
   margin-top: auto;
+}
+.explanation p{
+  text-align: left;
 }
 
 .day-night-transition,
