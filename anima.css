@@ -251,12 +251,15 @@
   top: 0;
   left: 0;
   background-color: #b3401a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .untitled__slide {
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: auto;
   opacity: 0;
   -webkit-animation: showHideSlide infinite 20s steps(1);
           animation: showHideSlide infinite 20s steps(1);
@@ -313,7 +316,7 @@
 }
 
 .untitled__slide:nth-child(2) .untitled__slideBg {
-  background-image: url(https://unsplash.it/g/1500/1000?image=1078);
+  background-image: url("../proshow/1.jpeg");
 }
 
 .untitled__slide:nth-child(3) {
@@ -322,7 +325,7 @@
 }
 
 .untitled__slide:nth-child(3) .untitled__slideBg {
-  background-image: url(https://unsplash.it/g/1500/1000?image=1077);
+  background-image: url("../proshow/1.jpeg");
 }
 
 .untitled__slide:nth-child(4) {
@@ -331,7 +334,7 @@
 }
 
 .untitled__slide:nth-child(4) .untitled__slideBg {
-  background-image: url(https://unsplash.it/g/1500/1200?image=345);
+  background-image: url("../proshow/1.jpeg");
 }
 
 .untitled__slideBg {
@@ -448,6 +451,9 @@
           transform: translate3d(0.5vmin, -0.5vmin, 0);
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  position: absolute;
+  bottom: -138px;
+  left: -79px;
 }
 
 .button:hover {
