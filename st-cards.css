@@ -764,6 +764,9 @@ svg.transition-scene {
 .solar-system-animation {
   --poster: #4f2b93;
 }
+.solar-system-animation-cultural {
+  --poster: #932b51b5;
+}
 
 .smallnumber {
   font-size: 0.8em;
