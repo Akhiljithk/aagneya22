@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
   <meta charset="UTF-8">
@@ -165,7 +165,7 @@
 
 
   <!-- pro show  -->
-  <div class="pro-show">
+  <div class="pro-show" id="blur">
     <h1 class="hero-title"><span class="hero-title-text"><strong>PRO SHOWS</strong></h1>
     <!-- anima  -->
     <!-- <div class="anima-wrapper">
@@ -270,7 +270,7 @@
 
   </div>
 
-  <div style="height: 100vh;
+  <div id="blur" style="height: 100vh;
 width: 100%;
 display: flex;
 justify-content: center;
@@ -333,7 +333,7 @@ text-align: center;">
     color: #752cff;
     text-shadow: none;"><span class="hero-title-text"><strong>Technical</strong></h1>
   </a>
-  <div class="swiper mySwiper" id="blur">
+  <div id="blur" class="swiper mySwiper" id="blur">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
 
@@ -455,35 +455,62 @@ text-align: center;">
   </div>
 
     <div id="pop-up" class="box" style="padding: 0; margin: 0;">
-      <div class="content-container">
-        <h2>Music is lifeblood to this virtuoso</h2>
-        <div class="popup-content">
-          <p>
-            Music is lifeblood to this virtuoso.
-            <br>
-            His beats sync with your heart<br>
-            His rhythm touches your soul <br>
-            He creates the strongest form of magic that hymns through the heart of every melody lovers.
-            <br>
-            So hold your fury for the supremely talented SOORAJ SANTHOSH performing live , this AAGNEYA
-            <br>
-            June 5 | Putharikandam Maithanam
-            <br>
-            UNLEASH THE FIRE WITHIN <br>
-          </p>
+        <div class="content-container">
+          <!-- <img style="width: 100%;height: auto;max-width: 500px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyJN66lqAeSpmX6ZhdbppNM8f4_71hzIiSWA&usqp=CAU" alt=""> -->
+          <h2 style="margin-top: 5px;">Music is lifeblood to this virtuoso</h2>
+          <div class="popup-content">
+            <p>
+              Music is lifeblood to this virtuoso.
+              <br>
+              His beats sync with your heart<br>
+              His rhythm touches your soul <br>
+              He creates the strongest form of magic that hymns through the heart of every melody lovers.
+              <br>
+              So hold your fury for the supremely talented SOORAJ SANTHOSH performing live , this AAGNEYA
+              <br>
+              June 5 | Putharikandam Maithanam
+              <br>
+              UNLEASH THE FIRE WITHIN <br>
+            </p>
+            <p>
+              Music is lifeblood to this virtuoso.
+              <br>
+              His beats sync with your heart<br>
+              His rhythm touches your soul <br>
+              He creates the strongest form of magic that hymns through the heart of every melody lovers.
+              <br>
+              So hold your fury for the supremely talented SOORAJ SANTHOSH performing live , this AAGNEYA
+              <br>
+              June 5 | Putharikandam Maithanam
+              <br>
+              UNLEASH THE FIRE WITHIN <br>
+            </p>
+            <p>
+              Music is lifeblood to this virtuoso.
+              <br>
+              His beats sync with your heart<br>
+              His rhythm touches your soul <br>
+              He creates the strongest form of magic that hymns through the heart of every melody lovers.
+              <br>
+              So hold your fury for the supremely talented SOORAJ SANTHOSH performing live , this AAGNEYA
+              <br>
+              June 5 | Putharikandam Maithanam
+              <br>
+              UNLEASH THE FIRE WITHIN <br>
+            </p>
+        </div>
+        <div
+        style="display: block; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap;">
+        <a href ="tech_camp.html" class="green-neon-btn" style="margin-bottom: 15px; width: 100%; text-align: center; margin-top: 0;">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Register
+        </a>
+        <a class="btn" style="cursor: pointer;" onclick="showEvent_1_Details()" class="">Close</a>
       </div>
-      <div
-      style="display: block; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap;">
-      <a href ="tech_camp.html" class="green-neon-btn" style="margin-bottom: 15px; width: 100%; text-align: center; margin-top: 0;">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Register
-      </a>
-      <a class="btn" onclick="showEvent_1_Details()" class="">Close</a>
-    </div>
-    </div>
+      </div>
     </div>
   <!-- events  -->
   <!-- <div class="hero">
@@ -778,6 +805,8 @@ text-align: center;">
       blur.classList.toggle('active')
       var popup = document.getElementById('pop-up');
       popup.classList.toggle('active')
+      var html = document.getElementById('html');
+      html.classList.toggle('active')
     }
 
   </script>

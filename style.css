@@ -577,10 +577,6 @@ p{
     opacity: 0;
     transition: 0.5s;
     color: #ffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 .box:before{  
   content: '';
@@ -639,7 +635,9 @@ p{
 	user-select: none;
 }
 .popup-content{
-    margin-top: 25px;
+  max-height: 255px;
+  overflow-y: scroll;
+  margin-bottom: 16px;
 }
 @keyframes animateGlow {
     0% {
@@ -671,6 +669,7 @@ p{
     right: 0;
     z-index: -1;
     height: 100%;
+    max-height: 90vh;
     width: 100%;
     margin: 0 auto;
     transform: scale(0.75);
@@ -709,7 +708,7 @@ p{
   
 .loader-svg {
       display: block;
-      font: 10.5em 'Montserrat';
+      font: 10.5em 'Montserrat' !important;
       width: 960px;
       height: 300px;
       margin: 0 auto;
@@ -753,7 +752,9 @@ p{
       100% {stroke-dashoffset: -35%;}
   }
 
-
+#html.active {
+    overflow: hidden !important;
+}
 
 
 
