@@ -355,7 +355,7 @@ p{
     display: inline-block;
     padding: 16px 30px;
     margin: 40px 0;
-    color: #00ff54;
+    color: #5c12ec;
     font-size: 15px;
     text-decoration: none;
     text-transform: uppercase;
@@ -365,15 +365,15 @@ p{
     -webkit-box-reflect: below 10px linear-gradient(transparent,transparent,rgba(0,0,0,.13333333333333333));
   }
   .green-neon-btn:link , .green-neon-btn:active {
-    color : #00ff54;
+    color : #5c12ec;
   }
   .green-neon-btn:hover {
-    background : #00ff54;
+    background : #5c12ec;
     color : #050801;
-    box-shadow : 0 0 5px #00ff54,
-                  0 0 25px #00ff54,
-                0 0 50px #00ff54,
-                0 0 200px #00ff54;
+    box-shadow : 0 0 5px #5c12ec,
+                  0 0 25px #5c12ec,
+                0 0 50px #5c12ec,
+                0 0 200px #5c12ec;
   }
   .green-neon-btn span {
     position : absolute;
@@ -385,7 +385,7 @@ p{
     left : -100%;
     width : 100%; */
     height :2px;
-    background : linear-gradient(90deg,transparent,#00ff54);
+    background : linear-gradient(90deg,transparent,#5c12ec);
     animation : animate1 1s linear infinite;
   }
   @keyframes animate1 {
@@ -398,7 +398,7 @@ p{
     right : 0;
     height : 100%;
     width :2px;
-    background : linear-gradient(180deg,transparent,#00ff54);
+    background : linear-gradient(180deg,transparent,#5c12ec);
     animation : animate2 1s linear infinite;
     animation-delay : 0.25s;
   }
@@ -413,7 +413,7 @@ p{
     right : -100%;
     width : 100%;
     height :2px;
-    background : linear-gradient(90deg,transparent,#00ff54);
+    background : linear-gradient(90deg,transparent,#5c12ec);
     animation : animate3 1s linear infinite;
     animation-delay : 0.5s;
   }
@@ -428,7 +428,7 @@ p{
     bottom : -100%;
     width : 2px;
     height :100%;
-    background : linear-gradient(90deg,transparent,#00ff54);
+    background : linear-gradient(90deg,transparent,#5c12ec);
     animation : animate4 1s linear infinite;
     animation-delay : 0.75s;
   }
@@ -568,37 +568,59 @@ p{
     left: 50%;
     transform: translate(-50%,-50%);
     width: 90%;
-    padding: 31px;
     height: auto;
     max-height: 90vh;
     max-width: 700px;
     box-shadow: 0 5px 30px rgb(0 0 0 / 30%);
     background: rgb(22, 18, 37);
-	visibility: hidden;
-	opacity: 0;
-	transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
     color: #ffff;
-    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box:before{  
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  background: #fff;
+  filter: blur(40px);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.box:after{  
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  right: -2px;
+  background: #fff;
+  /* filter: blur(40px); */
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.box:after,
+.box:before{  
+  background: linear-gradient(235deg, #6c32d9, #010615, #6c32d9);
+}
+.content-container{
+  width: 98%;
+  height: 100%;
+  padding: 26px;
+  background: #011227;
 }
 #pop-up h2{
     margin-bottom: 20px;
 }
 #pop-up p{
     margin-bottom: 28px;
-}
-#pop-up a{
-    padding: 7px 20px;
-    background: #ffff;
-    border-radius: 4px;
-    display: block;
-    margin: 10px;
-    text-align: center;
-    color: #000;
-    font-weight: bold;
-    cursor: pointer;
-}
-#pop-up a:hover{
-background: rgb(210, 210, 210);
 }
 
 
