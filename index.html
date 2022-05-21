@@ -59,7 +59,7 @@
     <!-- <div class="toggle"></div> -->
     <ul class="navigation">
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="tech_camp.html">Tech camp</a></li>
+      <li><a href="#events">Tech camp</a></li>
       <!-- <li><a href="#">Schedule</a></li>
             <li><a href="#">Contact</a></li> -->
     </ul>
@@ -280,17 +280,17 @@
   margin: unset;
   margin-bottom: 2em;
   margin-left: 2em;
-"><span class="hero-title-text"><strong>EVENTS</strong></h1>
+"><span class="hero-title-text" id="events"><strong>EVENTS</strong></h1>
 
 
-  <a href="events/technical-events.html">
+  <a href="#technical-events">
     <h1 class="hero-title" style="
     transform: unset;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 23px;
     color: #752cff;
-    text-shadow: none;"><span class="hero-title-text"><strong>Technical</strong></h1>
+    text-shadow: none;" id="technical-events"><span class="hero-title-text"><strong>Technical</strong></h1>
   </a>
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
@@ -355,7 +355,7 @@
     text-align: center;
     margin-bottom: 23px;
     color: #ff176bb5;
-    text-shadow: none;"><span class="hero-title-text"><strong>Cultural</strong></h1>
+    text-shadow: none;" id="cultural-events"><span class="hero-title-text"><strong>Cultural</strong></h1>
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -412,13 +412,14 @@
     <div class="swiper-button-prev"></div>
     <!-- <div class="swiper-pagination"></div> -->
   </div> <!-- end of carousel section -->
+
   <h1 id="cultural-events" class="hero-title" style="
     transform: unset;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 23px;
     color: #2cffa7;
-    text-shadow: none;"><span class="hero-title-text"><strong>Managerial</strong></h1>
+    text-shadow: none;" id="managerial-events"><span class="hero-title-text"><strong>Managerial</strong></h1>
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -482,7 +483,7 @@
   text-align: center;
   margin-bottom: 23px;
   color: #39bbdb;
-  text-shadow: none;"><span class="hero-title-text"><strong>Entrepreneurial</strong></h1>
+  text-shadow: none;" id="entrepreneurial-events"><span class="hero-title-text"><strong>Entrepreneurial</strong></h1>
 <div class="swiper mySwiper">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
@@ -546,7 +547,7 @@
   text-align: center;
   margin-bottom: 23px;
   color: #ff2c2c;
-  text-shadow: none;"><span class="hero-title-text"><strong>Others</strong></h1>
+  text-shadow: none;" id="other-events"><span class="hero-title-text"><strong>Others</strong></h1>
 <div class="swiper mySwiper">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
@@ -608,6 +609,7 @@
 
     <div id="pop-up" class="box" style="padding: 0; margin: 0;">
         <div class="content-container">
+          <img onclick="showEvent_1_Details()" style="cursor: pointer; position: absolute;width: 30px;right: 18px;top: 18px;" src="icon/Close-icon.png" alt="close">
           <!-- <img style="width: 100%;height: auto;max-width: 500px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyJN66lqAeSpmX6ZhdbppNM8f4_71hzIiSWA&usqp=CAU" alt=""> -->
           <h2 style="margin-top: 5px;">Music is lifeblood to this virtuoso</h2>
           <div class="popup-content">
@@ -646,14 +648,14 @@
           <span></span>
           <span></span>
           Register
-        </a>
-        <a class="btn" style="cursor: pointer;" onclick="showEvent_1_Details()" class="">Close</a>
+        </a>  
       </div>
       </div>
     </div>
 
     <div id="cultural" class="box cultural" style="padding: 0; margin: 0;">
         <div class="content-container">
+          <img onclick="showCulturalEventDetails()" style="cursor: pointer; position: absolute;width: 30px;right: 18px;top: 18px;" src="icon/Close-icon.png" alt="close">
           <!-- <img style="width: 100%;height: auto;max-width: 500px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyJN66lqAeSpmX6ZhdbppNM8f4_71hzIiSWA&usqp=CAU" alt=""> -->
           <h2 style="margin-top: 5px;">koothara popup</h2>
           <div class="popup-content">
@@ -693,7 +695,6 @@
           <span></span>
           Register
         </a>
-        <a class="btn" style="cursor: pointer;" onclick="showCulturalEventDetails()" class="">Close</a>
       </div>
       </div>
     </div>
