@@ -437,13 +437,41 @@ p{
     50%,100%{bottom :100%}
   }
 
+  /* cultural popup btn  */
+  .green-neon-btn-cultural {
+    color: #ff005db5;
+  }
+  .green-neon-btn-cultural:link , .green-neon-btn:active {
+    color : #ff005db5;
+  }
+  .green-neon-btn-cultural:hover {
+    background : #ff005db5;
+    box-shadow : 0 0 5px #ff005db5,
+                  0 0 25px #ff005db5,
+                0 0 50px #ff005db5,
+                0 0 200px #ff005db5;
+  }
+  .green-neon-btn-cultural span:nth-child(1) {
+    background : linear-gradient(90deg,transparent,#ff005db5);
+  }
+  .green-neon-btn-cultural span:nth-child(2) {
+    background : linear-gradient(180deg,transparent,#ff005db5);
+  }
+  .green-neon-btn-cultural span:nth-child(3) {
+    background : linear-gradient(90deg,transparent,#ff005db5);
+  }
+  .green-neon-btn-cultural span:nth-child(4) {
+    background : linear-gradient(90deg,transparent,#ff005db5);
+  }
+  /* cultural popup btn ends */
+
   /* neon */
-  .neon {
+  /* .neon {rgb(58, 53, 68)rgb(58, 53, 68)
     color: #97b1f1;
     text-shadow: 0px 1px 2px #4a67ff, 0px -1px 2px #3f5dff, 1px 0px 2px #3f5dff, -1px 0px 2px #3f5dff, 1px 1px 2px #4361ff, -1px -1px 2px #4562ff, 1px -1px 2px #3f5dff, -1px 1px 2px #4360ff, 0px 0px 10px #3f5dffe0, 0px 0px 20px #3f5dffcc, 0px 0px 30px #3f5dffb0, 0px 0px 40px #3f5dff9e, 0px 0px 50px #3f5dff85, 0px 0px 60px #3f5dff61, 0px 0px 70px #3f5dff47;
     -webkit-animation: flickerAnimation 2s infinite;
     animation: flickerAnimation 2s infinite;
-  }
+  } */
   
   @-webkit-keyframes flickerAnimation {
     0% {
@@ -564,7 +592,7 @@ p{
     color: #ffffff;
     background: #210129;
   }
-  #pop-up{
+  .box{
     position: fixed;
     top: 40%;
     left: 50%;
@@ -608,6 +636,10 @@ p{
 .box:before{  
   background: linear-gradient(235deg, #6c32d9, #010615, #6c32d9);
 }
+.cultural:after,
+.cultural:before{
+  background: linear-gradient(235deg, #ff005db5, #010615, #ff005db5);
+}
 .content-container{
   width: 98%;
   height: 100%;
@@ -616,15 +648,23 @@ p{
   position: relative;
   top: 8px;
 }
-#pop-up h2{
+.box h2{
     margin-bottom: 20px;
 }
-#pop-up p{
+.box p{
     margin-bottom: 28px;
 }
 
 
 #pop-up.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+#cultural.active{
     top: 50%;
     visibility: visible;
     opacity: 1;
