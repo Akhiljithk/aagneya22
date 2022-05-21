@@ -597,8 +597,8 @@ p{
 .box:after{  
   content: '';
   position: absolute;
-  top: -2px;
-  left: -1px;
+  top: 4px;
+  left: 0px;
   right: -2px;
   background: #fff;
   /* filter: blur(40px); */
@@ -615,6 +615,8 @@ p{
   height: 100%;
   padding: 26px;
   background: #011227;
+  position: relative;
+  top: 8px;
 }
 #pop-up h2{
     margin-bottom: 20px;
