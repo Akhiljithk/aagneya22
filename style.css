@@ -353,9 +353,9 @@ p{
     position: relative;
     width: 204px;
     display: inline-block;
-    padding: 12px 30px;
+    padding: 16px 30px;
     margin: 40px 0;
-    color: #6c32d9;
+    color: #5c12ec;
     font-size: 15px;
     text-decoration: none;
     text-transform: uppercase;
@@ -365,15 +365,15 @@ p{
     -webkit-box-reflect: below 10px linear-gradient(transparent,transparent,rgba(0,0,0,.13333333333333333));
   }
   .green-neon-btn:link , .green-neon-btn:active {
-    color : #6c32d9;
+    color : #5c12ec;
   }
   .green-neon-btn:hover {
-    background : #6c32d9;
+    background : #5c12ec;
     color : #050801;
-    box-shadow : 0 0 5px #6c32d9,
-                  0 0 25px #6c32d9,
-                0 0 50px #6c32d9,
-                0 0 200px #6c32d9;
+    box-shadow : 0 0 5px #5c12ec,
+                  0 0 25px #5c12ec,
+                0 0 50px #5c12ec,
+                0 0 200px #5c12ec;
   }
   .green-neon-btn span {
     position : absolute;
@@ -385,7 +385,7 @@ p{
     left : -100%;
     width : 100%; */
     height :2px;
-    background : linear-gradient(90deg,transparent,#6c32d9);
+    background : linear-gradient(90deg,transparent,#5c12ec);
     animation : animate1 1s linear infinite;
   }
   @keyframes animate1 {
@@ -398,7 +398,7 @@ p{
     right : 0;
     height : 100%;
     width :2px;
-    background : linear-gradient(180deg,transparent,#6c32d9);
+    background : linear-gradient(180deg,transparent,#5c12ec);
     animation : animate2 1s linear infinite;
     animation-delay : 0.25s;
   }
@@ -413,7 +413,7 @@ p{
     right : -100%;
     width : 100%;
     height :2px;
-    background : linear-gradient(90deg,transparent,#6c32d9);
+    background : linear-gradient(90deg,transparent,#5c12ec);
     animation : animate3 1s linear infinite;
     animation-delay : 0.5s;
   }
@@ -428,7 +428,7 @@ p{
     bottom : -100%;
     width : 2px;
     height :100%;
-    background : linear-gradient(90deg,transparent,#6c32d9);
+    background : linear-gradient(90deg,transparent,#5c12ec);
     animation : animate4 1s linear infinite;
     animation-delay : 0.75s;
   }
@@ -568,37 +568,59 @@ p{
     left: 50%;
     transform: translate(-50%,-50%);
     width: 90%;
-    padding: 31px;
     height: auto;
     max-height: 90vh;
     max-width: 700px;
     box-shadow: 0 5px 30px rgb(0 0 0 / 30%);
     background: rgb(22, 18, 37);
-	visibility: hidden;
-	opacity: 0;
-	transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
     color: #ffff;
-    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box:before{  
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  background: #fff;
+  filter: blur(40px);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.box:after{  
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  right: -2px;
+  background: #fff;
+  /* filter: blur(40px); */
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.box:after,
+.box:before{  
+  background: linear-gradient(235deg, #6c32d9, #010615, #6c32d9);
+}
+.content-container{
+  width: 98%;
+  height: 100%;
+  padding: 26px;
+  background: #011227;
 }
 #pop-up h2{
     margin-bottom: 20px;
 }
 #pop-up p{
     margin-bottom: 28px;
-}
-#pop-up a{
-    padding: 7px 20px;
-    background: #ffff;
-    border-radius: 4px;
-    display: block;
-    margin: 10px;
-    text-align: center;
-    color: #000;
-    font-weight: bold;
-    cursor: pointer;
-}
-#pop-up a:hover{
-background: rgb(210, 210, 210);
 }
 
 
@@ -729,159 +751,10 @@ background: rgb(210, 210, 210);
       100% {stroke-dashoffset: -35%;}
   }
 
-.box-inside-wrapper{
-    background: #060C20;
-    width: 100%;
-    height: 81vh;
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 
-.popups {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    background: #060c21d9;
-    position: fixed;
-    top: 18%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-}
-.popups.active{
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-    z-index: 9999;
-}
-.box {
-  position: relative;
-  width: 90%;
-  max-width: 300px;
-  max-height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px;
-  background: #060c21; 
-  transition: .5s;
-  z-index: 1;
-  
-}
-
-.box .imgBx {
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;;
-}
-
-.box .imgBx img {
-  max-width: 100%;
-  opacity: 1;
-  transition: .5s; 
-}
 
 
-.box:before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: #fff;
-  z-index: -1;
-
-}
-
-.box:after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: #fff;
-  z-index: -2;
-  filter: blur(40px);
-}
-
-.box:before,
-.box:after   {  
-  background: linear-gradient(235deg, #6c32d9, #010615, #6c32d9);
-}
-
-.box:nth-child(2):before,
-.box:nth-child(2):after   { /* not supported 😣 */
-  background: linear-gradient(235deg, #2196f3, #010615, #F00000);
-}
-
-.box:nth-child(3):before,
-.box:nth-child(3):after   { /* not supported 😣 */
-  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
-}
-
-.box .content {
-  position: absolute;
-  top: 49%;   
-  left: 10px;
-  right: 10px;
-  height: auto;
-  background: rgba(0,0,0,.04);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  transition: 0.5s;
-  padding: 20px;
-}
-
-
-.box .content h2 {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 500; /* just one style 😐 */
-  line-height: 20px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.box .content h2 span {
-  font-size: 14px;
-  color: #fff;
-  font-weight: 200; /* just one style 😐 */
-  
-  letter-spacing: 2px;
-}
-
-.box .content p {
-  color: #fff;
-margin-top: 2em;
-font-size: 12px;
-max-height: 100%;
-height: 256px;
-    overflow-y: scroll;
-}
 
 
 

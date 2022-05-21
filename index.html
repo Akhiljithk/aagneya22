@@ -32,7 +32,6 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="st-cards.css">
   <link rel="stylesheet" href="anima.css">
-  <link rel="stylesheet" href="popup.css">
   <meta name="google-site-verification" content="vYP8v96hRT4NXd5RRlFysTAjqP9XYg3yp8KC7oaJdcU" />
 </head>
 
@@ -455,51 +454,37 @@ text-align: center;">
     <!-- <div class="swiper-pagination"></div> -->
   </div>
 
-  <div class="popups" id="popups">
-    <div class="box">
-      <button onclick="showEvent_1_Details()"><img style="    color: #c30000;
-        background: #ffff;
-        position: absolute;
-        top: -30px;
-        right: 0;
-    " src="icon/close.svg" alt=""></button>
-      <div class="box-inside-wrapper">
-        <div class="imgBx">  
-          <img src="http://samuel-garcia.site/img/the-rise.png" alt="STAR-WARS-The-Skywalker">
+    <div id="pop-up" class="box" style="padding: 0; margin: 0;">
+      <div class="content-container">
+        <h2>Music is lifeblood to this virtuoso</h2>
+        <div class="popup-content">
+          <p>
+            Music is lifeblood to this virtuoso.
+            <br>
+            His beats sync with your heart<br>
+            His rhythm touches your soul <br>
+            He creates the strongest form of magic that hymns through the heart of every melody lovers.
+            <br>
+            So hold your fury for the supremely talented SOORAJ SANTHOSH performing live , this AAGNEYA
+            <br>
+            June 5 | Putharikandam Maithanam
+            <br>
+            UNLEASH THE FIRE WITHIN <br>
+          </p>
       </div>
-      <a href ="tech_camp.html" class="green-neon-btn" style="width: 90%;text-align: center;margin-top: 0;position: absolute;top: 43%;">
+      <div
+      style="display: block; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap;">
+      <a href ="tech_camp.html" class="green-neon-btn" style="margin-bottom: 15px; width: 100%; text-align: center; margin-top: 0;">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        Register here
+        Register
       </a>
-      <div class="content">
-          <h2>STAR WARS<br><span>rise of skywalker</span></h2>
-           <p>I'm a Front End Developer, follow me to be the first 
-       who see my new work. I'm a Front End Developer, follow me to be the first 
-       who see my new work. I'm a Front End Developer, follow me to be the first 
-       who see my new work. I'm a Front End Developer, follow me to be the first 
-       who see my new work. I'm a Front End Developer, follow me to be the first 
-       who see my new work. I'm a Front End Developer, follow me to be the first 
-       who see my new work. I'm a Front End Developer, follow me to be the first 
-       who see my new work. I'm a Front End Developer, follow me to be the first 
-       who see my new work.
-       I'm a Front End Developer, follow me to be the first 
-       I'm a Front End Developer, follow me to be the first 
-       I'm a Front End Developer, follow me to be the first 
-       I'm a Front End Developer, follow me to be the first 
-       I'm a Front End Developer, follow me to be the first 
-       I'm a Front End Developer, follow me to be the first 
-       I'm a Front End Developer, follow me to be the first 
-       I'm a Front End Developer, follow me to be the first 
-       I'm a Front End Developer, follow me to be the first who see my new work. I'm a Front End Developer, follow me to be the first who see my new work. I'm a Front End Developer, follow me to be the first who see my new work. I'm a Front End Developer, follow me to be the first who see my new work. I'm a Front End Developer, follow me to be the first who see my new work. I'm a Front End Developer, follow me to be the first who see my new work. I'm a Front End Developer, follow me to be the first who see my new work. I'm a Front End Developer, follow me to be the first who see my new work. I'm a Front End Developer, follow me to be the first I'm a Front End Developer, follow me to be the first I'm a Front End Developer, follow me to be the first I'm a Front End Developer, follow me to be the first I'm a Front End Developer, follow me to be the first I'm a Front End Developer, follow me to be the first I'm a Front End Developer, follow me to be the first I'm a Front End Developer, follow me to be the first
-      </p>
-       </div>
-      </div>
-      
-  </div>
-  </div>
+      <a class="btn" onclick="showEvent_1_Details()" class="">Close</a>
+    </div>
+    </div>
+    </div>
   <!-- events  -->
   <!-- <div class="hero">
             <div class="hero-wrapper">
@@ -791,7 +776,7 @@ text-align: center;">
     function showEvent_1_Details() {
       var blur = document.getElementById('blur');
       blur.classList.toggle('active')
-      var popup = document.getElementById('popups');
+      var popup = document.getElementById('pop-up');
       popup.classList.toggle('active')
     }
 
