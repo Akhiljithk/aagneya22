@@ -31,7 +31,6 @@
   <link rel="stylesheet" href="button.css">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="st-cards.css">
-  <link rel="stylesheet" href="anima.css">
   <meta name="google-site-verification" content="vYP8v96hRT4NXd5RRlFysTAjqP9XYg3yp8KC7oaJdcU" />
 </head>
 
@@ -54,16 +53,7 @@
     </div>
   </div>
 
-  <header id="header">
-    <a href="#" class="logo"></a>
-    <!-- <div class="toggle"></div> -->
-    <ul class="navigation">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="#events">Tech camp</a></li>
-      <!-- <li><a href="#">Schedule</a></li>
-            <li><a href="#">Contact</a></li> -->
-    </ul>
-  </header>
+
   <div id="stars-container">
     <div id='stars'></div>
     <div id='stars2'></div>
@@ -101,12 +91,7 @@
     </div> -->
   <div class="sec" id="sec">
     <div data-aos="fade-up" class="content-div" style="margin-bottom: 3rem;">
-      <h1 class="hero-title" style="
-      transform: unset;
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 23px;
-      color: #ff2c2c;"><span class="hero-title-text"><strong>About us</strong></h1>
+      <h1 class="hero-title" style="font-size: 2em; transform: unset;"><span style="text-align: center;" class="hero-title-text"><strong>ABOUT US</strong></h1>
       <p>
         Government Engineering College, Barton Hill (GECBH), situated in the
         heart of the capital city of Thiruvananthapuram,Kerala is one of the
@@ -126,7 +111,6 @@
       </p>
     </div>
   </div>
-
 
   <!-- <div class="tech-camp-wrapper">
       <h1 class="hero-title tech-camp-head" style="text-align: center;"><span class="hero-title-text"><strong>TECH CAMP</strong></h1>
@@ -172,7 +156,7 @@
   <div id="blur">
       <!-- pro show  -->
   <div class="pro-show">
-    <h1 class="hero-title"><span class="hero-title-text"><strong>PRO SHOWS</strong></h1>
+    <h1 class="hero-title" data-aos="fade-up"><span class="hero-title-text"><strong>PRO SHOWS</strong></h1>
     <!-- anima  -->
     <!-- <div class="anima-wrapper">
           <div class="swiper-wrapper">
@@ -218,7 +202,7 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
 
-          <div class="st-card-wrapper">
+          <div class="st-card-wrapper" data-aos="fade-up">
             <div class="day-night-transition">
               <div class="heading">
                 <p class="smallnumber"> proshow #1</p>
@@ -276,7 +260,7 @@
 
   </div>
 
-    <h1 class="hero-title" style="text-align: center;
+    <h1 data-aos="fade-up" class="hero-title" style="text-align: center;
   margin: unset;
   margin-bottom: 2em;
   margin-left: 2em;
@@ -284,7 +268,7 @@
 
 
   <a href="#technical-events">
-    <h1 class="hero-title" style="
+    <h1 data-aos="fade-up" class="hero-title" style="
     transform: unset;
     font-size: 2rem;
     text-align: center;
@@ -296,7 +280,7 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
 
-        <div class="st-card-wrapper">
+        <div class="st-card-wrapper" data-aos="fade-up">
           <div class="solar-system-animation">
             <div class="heading">
               <p class="smallnumber"> proshow #1</p>
@@ -349,7 +333,7 @@
     <!-- <div class="swiper-pagination"></div> -->
   </div>
 
-  <h1 id="cultural-events" class="hero-title" style="
+  <h1 data-aos="fade-up" id="cultural-events" class="hero-title" style="
     transform: unset;
     font-size: 2rem;
     text-align: center;
@@ -360,7 +344,7 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
 
-        <div class="st-card-wrapper">
+        <div class="st-card-wrapper" data-aos="fade-up">
           <div class="solar-system-animation solar-system-animation-cultural">
             <div class="heading">
               <p class="smallnumber"> proshow #1</p>
@@ -424,7 +408,7 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
 
-        <div class="st-card-wrapper">
+        <div class="st-card-wrapper" data-aos="fade-up">
           <div class="solar-system-animation solar-system-animation-managerial">
             <div class="heading">
               <p class="smallnumber"> proshow #1</p>
@@ -488,7 +472,7 @@
   <div class="swiper-wrapper">
     <div class="swiper-slide">
 
-      <div class="st-card-wrapper">
+      <div class="st-card-wrapper" data-aos="fade-up">
         <div class="solar-system-animation solar-system-animation-entrepreneurial">
           <div class="heading">
             <p class="smallnumber"> proshow #1</p>
@@ -552,7 +536,7 @@
   <div class="swiper-wrapper">
     <div class="swiper-slide">
 
-      <div class="st-card-wrapper">
+      <div class="st-card-wrapper" data-aos="fade-up">
         <div class="solar-system-animation solar-system-animation-others">
           <div class="heading">
             <p class="smallnumber"> proshow #1</p>
@@ -824,8 +808,8 @@
     var tree_rt = document.getElementById('tree_rt')
     var bird2_mobile = document.getElementById('bird2_mobile')
     var bird_lt_mobile = document.getElementById('bird_lt_mobile')
-    var hori_kuttan = document.getElementById('hori-kuttan')
-    var hori_kutti = document.getElementById('hori-kutti')
+    // var hori_kuttan = document.getElementById('hori-kuttan')
+    // var hori_kutti = document.getElementById('hori-kutti')
 
     function MediaQueryController(x) {
       if (x.matches) {
@@ -857,14 +841,14 @@
             hill_5.style.bottom = value * -0.1 + 'px';
             aagneya.style.top = 43 + value * 0.1 + '%';
 
-            if (value >= 2173) {
-              value = value - 2173
-              hori_kuttan.style.left = 880.5 + value * -0.90 + 'px';
-            }
-            if (value2 >= 1479) {
-              value2 = value2 - 1479
-              hori_kutti.style.left = -898.5999999999999 + value2 * 0.90 + 'px';
-            }
+            // if (value >= 2173) {
+            //   value = value - 2173
+            //   hori_kuttan.style.left = 880.5 + value * -0.90 + 'px';
+            // }
+            // if (value2 >= 1479) {
+            //   value2 = value2 - 1479
+            //   hori_kutti.style.left = -898.5999999999999 + value2 * 0.90 + 'px';
+            // }
           }
 
         })
@@ -908,8 +892,10 @@
             aagneya.style.right = value * 0.75 + 'px';
 
 
-            tree_lt.style.bottom = value * -0.75 + 'px';
-            tree_rt.style.bottom = value * -0.75 + 'px';
+            if (value < 366.3999938964844) {
+              tree_lt.style.bottom = value * -0.75 + 'px';
+              tree_rt.style.bottom = value * -0.75 + 'px';
+            }
             bg.style.bottom = value * 0.10 + 'px';
 
             bus.style.bottom = value * -0.40 + 'px';
@@ -1027,6 +1013,7 @@
       //   console.log("tada");
       //   document.getElementById("loader-body").style.display="none";
       // }, 8000);  
+
 
   </script>
 </body>

@@ -539,7 +539,8 @@ p{
   }
 
 .pro-show{
-    margin-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 .pro-show span{
     text-align: center;
@@ -657,6 +658,7 @@ p{
 }
 
 
+
 #pop-up.active{
     top: 50%;
     visibility: visible;
@@ -664,7 +666,34 @@ p{
     transition: 0.5s;
     z-index: 999;
 }
-
+#pop-up1.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 999;
+}
+#pop-up2.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 999;
+}
+#pop-up3.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 999;
+}
+#pop-up4.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 999;
+}
 #cultural.active{
     top: 50%;
     visibility: visible;
@@ -798,7 +827,6 @@ p{
 #html.active {
     overflow: hidden !important;
 }
-
 
 
 
