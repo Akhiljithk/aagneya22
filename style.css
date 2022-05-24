@@ -649,6 +649,7 @@ p{
   background: #011227;
   position: relative;
   top: 8px;
+
 }
 .box h2{
     margin-bottom: 20px;
@@ -710,6 +711,13 @@ p{
   max-height: 255px;
   overflow-y: scroll;
   margin-bottom: 16px;
+}
+.guidlines{
+    text-decoration: none;
+    color: #fff;
+    background: #6831d1;
+    padding: 2px 14px;
+    border-radius: 20px;
 }
 @keyframes animateGlow {
     0% {
