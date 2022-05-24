@@ -708,7 +708,7 @@ p{
 	user-select: none;
 }
 .popup-content{
-  max-height: 255px;
+  max-height: 201px;
   overflow-y: scroll;
   margin-bottom: 16px;
 }
