@@ -55,6 +55,9 @@
             width: 100%;
             margin: 0 auto;
           }
+          .hero-title-managerial{
+            font-size: 10vw;
+          }
         }
     </style>
 </head>
@@ -77,7 +80,7 @@
       </div>
     </div>
     <div class="container" id="blur">
-        <h1 class="hero-title managerial-neon-effect" style="text-align: center;
+        <h1 class="hero-title managerial-neon-effect hero-title-managerial" style="text-align: center;
         margin: unset;
         margin-bottom: 1em;
         padding-top: 1em;
@@ -86,7 +89,7 @@
       "><span class="hero-title-text"><strong>managerial</strong> <span>EVENTS</span></h1>
         <div class="row justify-content-center align-items-center pb-3" style="margin: 0px;">
             <div onclick="showEvent_1_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../managerial/entervista.jpeg" alt=""></div>
-            <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
+            <div onclick="showEvent_2_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../technicals/crazy-catapuly.jpeg" alt=""></div>
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
@@ -136,42 +139,43 @@
       </div>
       </div>
     </div>
+    <div id="pop-up2" class="box managerial" style="padding: 0; margin: 0;">
+      <div class="content-container">
+        <img onclick="showEvent_2_Details()" class="close-btn" src="../icon/Close-icon.png" alt="close">
+        <img class="poster-on-popup" style="width: 100%;height: auto;max-width: 300px;" src="../technicals/crazy-catapuly.jpeg" alt="">
+        <h2 style="font-family: 'Poppins'; margin-top: 5px; text-align: center; margin-top: 25px; color: #c51613;     font-weight: 900;">CRAZY-CATAPULT</h2>
+        <div class="popup-content">
+          <p>
+            "Launch yourself at very opportunity that knocks. "<br><br>
 
-    <div id="pop-up2" class="box" style="padding: 0; margin: 0;">
-        <div class="content-container">
-          <img onclick="showEvent_2_Details()" class="close-btn" src="../icon/Close-icon.png" alt="close">
-          <img class="poster-on-popup" style="width: 100%;height: auto;max-width: 300px;" src="../technicals/inside-engines.jpeg" alt="">
-          <h2 style="font-family: 'Poppins'; margin-top: 5px; text-align: center; margin-top: 25px; color: #7468f4;     font-weight: 900;">Inside Engines</h2>
-          <div class="popup-content">
-            <p>
-              Engineering is all about being all rounded. Feel like testing your knowledge about engines and get a chance to build one? We've got your back! 🔥
-              <br><br>
-              Aagneya'22 by GECBH in association with ASME GECBH presents Inside Engines, a competition wherein you can compete as a team of 2 or 3, and participate to win prizes worth ₹10k. 🏆
-              <br><br>
-              📌 Registration fee: ₹100 per head
-              <br><br>
-              <a class="guidlines" href="http://bit.ly/Inside_Engines_Guidelines">GUIDELINES</a> <br> <br>
-              <br>
-              🗓️ Date: June 3, 2022<br>
-              🕦 Time: 11:30 am - 2:00 pm
-              <br><br>
-               Contact: 
-              Aryananda - +91 80895 84813
-              Jayakrishnan - +91 81297 75836
-            </p>
-        </div>
-        <div
-        style="display: block; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap;">
-        <a href ="https://www.yepdesk.com/inside-engines" class="green-neon-btn" style="margin-bottom: 15px; width: 100%; text-align: center; margin-top: 0;">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Register
-        </a>  
+            Here is another door of opportunity by Aagenya'22 in the form of  Crazy Catapults. For all those aspiring minds out there, create your own inspired catapult and aim your target to win upto ₹12,000.
+            <br>
+            🗓️ Date: 4th June, 2022 <br><br>
+            <a class="guidlines" href="https://bit.ly/CrazyCatapults_Guidelines" style="background-color: #c51613;">GUIDELINES</a><br><br>
+            🔗 Reg Fees: Rs. 50 per head  <br>
+
+
+            Contact:  <br>
+            Aleena K: +91 8281560153 <br>
+            Hridhya Rajesh V: +91 7907159600 <br>
+          </p>
       </div>
-      </div>
+      <div
+      style="display: block; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap;">
+      <a href ="https://www.yepdesk.com/embed/crazy-catapults" class="green-neon-btn green-neon-btn-managerial" style="margin-bottom: 15px; width: 100%; text-align: center; margin-top: 0;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Register
+      </a>  
     </div>
+    </div>
+  </div>
+
+
+   
+    
     <div id="pop-up3" class="box" style="padding: 0; margin: 0;">
         <div class="content-container">
           <img onclick="showEvent_3_Details()" style="cursor: pointer; position: absolute;width: 30px;right: 18px;top: 18px;" src="../icon/Close-icon.png" alt="close">
@@ -273,7 +277,7 @@
           let html = document.getElementById('html');
           html.classList.toggle('active')
     }
-     function showEvent_2_Details() {
+    function showEvent_2_Details() {
           let blur = document.getElementById('blur');
           blur.classList.toggle('active')
           let popup = document.getElementById('pop-up2');
