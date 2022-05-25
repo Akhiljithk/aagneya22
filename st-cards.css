@@ -637,7 +637,6 @@
     align-items: center;
     justify-content: center;
     gap: clamp(2vw, 300px, 5vw);
-    height: 100vh;
     padding: 0 5vw;
   }
 }
