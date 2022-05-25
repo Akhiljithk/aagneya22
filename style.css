@@ -466,6 +466,37 @@ p{
   }
   /* cultural popup btn ends */
 
+
+    /* cultural popup btn  */
+    .green-neon-btn-cultural {
+      color: #02ff61;
+    }
+    .green-neon-btn-managerial:link , .green-neon-btn:active {
+      color : #ffffff;
+    }
+    .green-neon-btn-managerial:hover {
+      background : #02ff61;
+      box-shadow : 0 0 5px #02ff61,
+                    0 0 25px #02ff61,
+                  0 0 50px #02ff61,
+                  0 0 200px #02ff61;
+    }
+    .green-neon-btn-managerial span:nth-child(1) {
+      background : linear-gradient(90deg,transparent,#02ff61);
+    }
+    .green-neon-btn-managerial span:nth-child(2) {
+      background : linear-gradient(180deg,transparent,#02ff61);
+    }
+    .green-neon-btn-managerial span:nth-child(3) {
+      background : linear-gradient(90deg,transparent,#02ff61);
+    }
+    .green-neon-btn-managerial span:nth-child(4) {
+      background : linear-gradient(90deg,transparent,#02ff61);
+    }
+    /* cultural popup btn ends */
+
+
+
   /* neon */
   /* .neon {rgb(58, 53, 68)rgb(58, 53, 68)
     color: #97b1f1;
@@ -641,6 +672,10 @@ p{
 .cultural:after,
 .cultural:before{
   background: linear-gradient(235deg, #ff005db5, #010615, #ff005db5);
+}
+.managerial:after,
+.managerial:before{
+  background: linear-gradient(235deg, #00ff62, #010615, #02ff61);
 }
 .content-container{
   width: 98%;
