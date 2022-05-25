@@ -31,7 +31,7 @@
             transition: all .2s ease-in-out;
         }
         .poster-card:hover{
-          transform: scale(1.1);
+          transform: scale(1.04);
         }
         .poster-on-popup{
           display: none;
@@ -59,7 +59,23 @@
     </style>
 </head>
   <body>
-
+    <div class="loader-body" id="loader-body">
+      <div class="loader-container">
+        <svg class="loader-svg" viewBox="0 0 960 300">
+          <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="80%">aagneya'22</text>
+          </symbol>
+  
+          <g class="g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+          </g>
+        </svg>
+      </div>
+    </div>
     <div class="container" id="blur">
         <h1 class="hero-title managerial-neon-effect" style="text-align: center;
         margin: unset;
@@ -281,6 +297,11 @@
           let html = document.getElementById('html');
           html.classList.toggle('active')
     }
+    
+    setTimeout(function(){
+        console.log("tada");
+        document.getElementById("loader-body").style.display="none";
+      }, 3000); 
     </script>
   </body>
 </html>

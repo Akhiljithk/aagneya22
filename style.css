@@ -819,6 +819,8 @@ p{
     width: 100%;
     left: 0;
     z-index: 999;
+    
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .loader-container {
@@ -832,6 +834,8 @@ p{
 .loader-svg {
       display: block;
       font: 10.5em 'Montserrat' !important;
+
+      font-family: 'Montserrat', sans-serif !important;
       width: 960px;
       height: 300px;
       margin: 0 auto;
