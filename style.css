@@ -737,6 +737,14 @@ p{
     transition: 0.5s;
     z-index: 999;
 }
+#njpopup.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 999;
+}
+
 #blur.active{
 	filter: blur(20px);
 	pointer-events: none;
