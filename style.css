@@ -468,7 +468,7 @@ p{
 
 
     /* cultural popup btn  */
-    .green-neon-btn-cultural {
+    .green-neon-btn-managerial {
       color: #02ff61;
     }
     .green-neon-btn-managerial:link , .green-neon-btn:active {
@@ -495,6 +495,34 @@ p{
     }
     /* cultural popup btn ends */
 
+
+    /* cultural popup btn  */
+    .green-neon-btn-entrepreneurial {
+      color: #1489a1;
+    }
+    .green-neon-btn-entrepreneurial:link , .green-neon-btn:active {
+      color : #ffffff;
+    }
+    .green-neon-btn-entrepreneurial:hover {
+      background : #1489a1;
+      box-shadow : 0 0 5px #1489a1,
+                    0 0 25px #1489a1,
+                  0 0 50px #1489a1,
+                  0 0 200px #1489a1;
+    }
+    .green-neon-btn-entrepreneurial span:nth-child(1) {
+      background : linear-gradient(90deg,transparent,#1489a1);
+    }
+    .green-neon-btn-entrepreneurial span:nth-child(2) {
+      background : linear-gradient(180deg,transparent,#1489a1);
+    }
+    .green-neon-btn-entrepreneurial span:nth-child(3) {
+      background : linear-gradient(90deg,transparent,#1489a1);
+    }
+    .green-neon-btn-entrepreneurial span:nth-child(4) {
+      background : linear-gradient(90deg,transparent,#1489a1);
+    }
+    /* cultural popup btn ends */
 
 
   /* neon */
@@ -676,6 +704,10 @@ p{
 .managerial:after,
 .managerial:before{
   background: linear-gradient(235deg, #00ff62, #010615, #02ff61);
+}
+.entrepreneurial:after,
+.entrepreneurial:before{
+  background: linear-gradient(235deg, #1489a1, #010615, #1489a1);
 }
 .content-container{
   width: 98%;
