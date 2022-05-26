@@ -89,7 +89,7 @@
             <div onclick="showEvent_1_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../entrepreneurial/hatch-pitch.jpeg" alt=""></div>
             <div onclick="showEvent_2_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../entrepreneurial/emerge.jpeg" alt=""></div>
             <div onclick="showEvent_3_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../entrepreneurial/innerve.jpeg" alt=""></div>
-            <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
+            <div onclick="showEvent_4_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../entrepreneurial/conception.jpeg" alt=""></div>
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
@@ -233,7 +233,43 @@
       </div>
       </div>
     </div>
-
+    <div id="pop-up4" class="box entrepreneurial" style="padding: 0; margin: 0;">
+      <div class="content-container">
+        <img onclick="showEvent_4_Details()" class="close-btn" src="../icon/Close-icon.png" alt="close">
+        <img class="poster-on-popup" style="width: 100%;height: auto;max-width: 300px;" src="../entrepreneurial/conception.jpeg" alt="">
+        <h2 style="font-family: 'Poppins'; margin-top: 5px; text-align: center; margin-top: 25px; color: #0e6176;     font-weight: 900;">CONCEPTION</h2>
+        <div class="popup-content">
+          <p>
+            "People don't use a product beacuase of the great design; great design helps them use the product."
+            <br><br>
+            Aagneya'22 by GECBH along with IEDC GECB presents the  Conception,a two-round online competition to establish your conceptual skills in product designing and marketing.. 
+            Here's the chance to unlock the product designer in you! 
+            <br><br>
+            📅 Date: 5th June,2022
+            <br><br>
+            
+            
+            ✨ Prizes worth 6k await the winners!
+            <br><br>
+            <a class="guidlines" style="background: #0e6176;" href="http://lnkiy.in/GuidelinesConception">GUIDELINES</a>
+            <br><br>
+            Contact:<br>
+            Anusree Anilkumar - 9446507835<br>
+            Devanarayan - 6282272027<br>
+          </p>
+      </div>
+      <div
+      style="display: block; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap;">
+      <a href ="https://www.yepdesk.com/conception" class="green-neon-btn green-neon-btn-entrepreneurial " style="margin-bottom: 15px; width: 100%; text-align: center; margin-top: 0;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Register
+      </a>  
+    </div>
+    </div>
+  </div>
     
     
     
@@ -260,6 +296,15 @@
           let blur = document.getElementById('blur');
           blur.classList.toggle('active')
           let popup = document.getElementById('pop-up3');
+          popup.classList.toggle('active')
+          let html = document.getElementById('html');
+          html.classList.toggle('active')
+    }
+    
+     function showEvent_4_Details() {
+          let blur = document.getElementById('blur');
+          blur.classList.toggle('active')
+          let popup = document.getElementById('pop-up4');
           popup.classList.toggle('active')
           let html = document.getElementById('html');
           html.classList.toggle('active')
