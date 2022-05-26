@@ -89,12 +89,13 @@
             <div onclick="showEvent_1_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../technicals/cad-buzz.jpeg" alt=""></div>
             <div onclick="showEvent_3_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../technicals/modeladora.jpeg" alt=""></div>
             <div onclick="showEvent_4_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../technicals/coding-ninja.jpeg" alt=""></div>
+            <div onclick="showEvent_5_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../technicals/autocad.jpeg" alt=""></div>
             
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
-            <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
+            
         </div>
     </div>
     
@@ -240,6 +241,43 @@
     </div>
     </div>
   </div>
+    <div id="pop-up5" class="box" style="padding: 0; margin: 0;">
+      <div class="content-container">
+        <img onclick="showEvent_5_Details()" class="close-btn" src="../icon/Close-icon.png" alt="close">
+        <img class="poster-on-popup" style="width: 100%;height: auto;max-width: 300px;" src="../technicals/autocad.jpeg" alt="">
+        <h2 style="font-family: 'Poppins'; margin-top: 5px; text-align: center; margin-top: 25px; color: #5428ad;     font-weight: 900;"> AUTOCAD</h2>
+        <div class="popup-content">
+          <p>
+            “Imagination is the beginning of creation. You imagine what you desire, you will what you imagine, and at last, you create what you will.”-George Bernad Shaw
+            <br><br>
+            Aagneya'22 by GECBH along with ICI GECBH presents you here with " Preparation of submission drawing in auto cad".
+            
+            Communicate your design ideas more effectively faster more easier and exhibit your calibre in this field.
+            <br><br>
+            Date: 4th June 2022 <br>
+            Time: 10 Am to 1 PM <br><br>
+
+           
+            <a class="guidlines" href="https://bit.ly/3sXxtPP">GUIDELINES</a><br><br>      
+            
+            <br><br>
+            Any querries?📲Ring up!!  <br>
+            Parvathy S R : 8078213719  <br>
+            Ananthu S S : 79943 49578  <br>
+          </p>
+      </div>
+      <div
+      style="display: block; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap;">
+      <a href ="https://www.yepdesk.com/workshop-on-cad" class="green-neon-btn" style="margin-bottom: 15px; width: 100%; text-align: center; margin-top: 0;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Register
+      </a>  
+    </div>
+    </div>
+  </div>
     
 
     
@@ -273,6 +311,14 @@
           let blur = document.getElementById('blur');
           blur.classList.toggle('active')
           let popup = document.getElementById('pop-up4');
+          popup.classList.toggle('active')
+          let html = document.getElementById('html');
+          html.classList.toggle('active')
+    }
+     function showEvent_5_Details() {
+          let blur = document.getElementById('blur');
+          blur.classList.toggle('active')
+          let popup = document.getElementById('pop-up5');
           popup.classList.toggle('active')
           let html = document.getElementById('html');
           html.classList.toggle('active')
