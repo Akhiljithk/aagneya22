@@ -88,6 +88,7 @@
         <div class="row justify-content-center align-items-center pb-3" style="margin: 0px;">
             <div onclick="showEvent_1_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../entrepreneurial/hatch-pitch.jpeg" alt=""></div>
             <div onclick="showEvent_2_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../entrepreneurial/emerge.jpeg" alt=""></div>
+            <div onclick="showEvent_3_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../entrepreneurial/innerve.jpeg" alt=""></div>
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
@@ -191,6 +192,47 @@
       </div>
       </div>
     </div>
+    <div id="pop-up3" class="box entrepreneurial" style="padding: 0; margin: 0;">
+        <div class="content-container">
+          <img onclick="showEvent_3_Details()" class="close-btn" src="../icon/Close-icon.png" alt="close">
+          <img class="poster-on-popup" style="width: 100%;height: auto;max-width: 300px;" src="../entrepreneurial/innerve.jpeg" alt="">
+          <h2 style="font-family: 'Poppins'; margin-top: 5px; text-align: center; margin-top: 25px; color: #0e6176;     font-weight: 900;">INNERVE</h2>
+          <div class="popup-content">
+            <p>
+              The ideas you share and the talks you give can be persuasive and stick in the minds of many and can get reflected as mind blowing changes. If you are a person wishing to be your own master, who is brimming with ideas, then this is an ideal stage for you. 
+              <br>
+              AAGNEYA '22 in association with IEDC GECBH, brings to you INNERVE,  an idea pitching competition to sculpt the entrepreneur in you.
+              <br><br>
+              🏆Prizes worth 10k!
+              <br><br>
+              💸Registration Fee: ₹100/- per head.
+              <br><br>
+              <a class="guidlines" style="background: #0e6176;" href="https://bit.ly/Innerve">GUIDELINES</a>
+               
+
+              <br><br>
+
+              🗓️Date: 04 June,2022. <br><br>
+
+              🏢Venue: Government Engineering College Barton Hill, Trivandrum. <br><br>
+
+              For more details, Contact: <br>
+              Ardra : 9846097674 <br>
+              Shreya : 9400022427 <br>
+            </p>
+        </div>
+        <div
+        style="display: block; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap;">
+        <a href ="https://www.yepdesk.com/innerve" class="green-neon-btn green-neon-btn-entrepreneurial " style="margin-bottom: 15px; width: 100%; text-align: center; margin-top: 0;">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Register
+        </a>  
+      </div>
+      </div>
+    </div>
 
     
     
@@ -210,6 +252,14 @@
           let blur = document.getElementById('blur');
           blur.classList.toggle('active')
           let popup = document.getElementById('pop-up2');
+          popup.classList.toggle('active')
+          let html = document.getElementById('html');
+          html.classList.toggle('active')
+    }
+     function showEvent_3_Details() {
+          let blur = document.getElementById('blur');
+          blur.classList.toggle('active')
+          let popup = document.getElementById('pop-up3');
           popup.classList.toggle('active')
           let html = document.getElementById('html');
           html.classList.toggle('active')
