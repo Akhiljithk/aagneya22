@@ -88,6 +88,7 @@
           <div onclick="showEvent_2_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../technicals/inside-engines.jpeg" alt=""></div>
             <div onclick="showEvent_1_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../technicals/cad-buzz.jpeg" alt=""></div>
             <div onclick="showEvent_3_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../technicals/modeladora.jpeg" alt=""></div>
+            <div onclick="showEvent_4_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../technicals/coding-ninja.jpeg" alt=""></div>
             
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
@@ -190,11 +191,46 @@
             Contact:<br>
             Parvathy M : +91 85905 31445<br>
             Arjun P: +91 81579 47570
-                      </p>
+          </p>
       </div>
       <div
       style="display: block; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap;">
       <a href ="https://www.yepdesk.com/modeladora" class="green-neon-btn" style="margin-bottom: 15px; width: 100%; text-align: center; margin-top: 0;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Register
+      </a>  
+    </div>
+    </div>
+  </div>
+
+    <div id="pop-up4" class="box" style="padding: 0; margin: 0;">
+      <div class="content-container">
+        <img onclick="showEvent_4_Details()" class="close-btn" src="../icon/Close-icon.png" alt="close">
+        <img class="poster-on-popup" style="width: 100%;height: auto;max-width: 300px;" src="../technicals/coding-ninja.jpeg" alt="">
+        <h2 style="font-family: 'Poppins'; margin-top: 5px; text-align: center; margin-top: 25px; color: #5428ad;     font-weight: 900;">CODING NINJA</h2>
+        <div class="popup-content">
+          <p>
+            "Programming is a skill best acquired by practice and example rather than from books."  <br><br>
+
+            Aagneya'22 by GECBH in association with CSI GECBH is here with CODING NINJA a two-round competition to showcase your coding skills. Grab the opportunity to bring out the coder in you.
+            <br>
+            📅 Date: 3rd June,2022
+            <br><br>
+            
+            ✨ Prizes worth 10k await the winners! <br><br>
+            <a class="guidlines" href="https://bit.ly/CodingNInjaRules">GUIDELINES</a><br><br>        
+
+            Contact: <br>
+            Anooja A Kumar - 9656051390  <br>
+            Afna -7034695630 <br>
+          </p>
+      </div>
+      <div
+      style="display: block; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap;">
+      <a href ="https://www.yepdesk.com/coding-ninja" class="green-neon-btn" style="margin-bottom: 15px; width: 100%; text-align: center; margin-top: 0;">
         <span></span>
         <span></span>
         <span></span>
@@ -229,6 +265,14 @@
           let blur = document.getElementById('blur');
           blur.classList.toggle('active')
           let popup = document.getElementById('pop-up3');
+          popup.classList.toggle('active')
+          let html = document.getElementById('html');
+          html.classList.toggle('active')
+    }
+     function showEvent_4_Details() {
+          let blur = document.getElementById('blur');
+          blur.classList.toggle('active')
+          let popup = document.getElementById('pop-up4');
           popup.classList.toggle('active')
           let html = document.getElementById('html');
           html.classList.toggle('active')

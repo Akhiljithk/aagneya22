@@ -762,6 +762,7 @@ p{
     transition: 0.5s;
     z-index: 999;
 }
+
 #cultural.active{
     top: 50%;
     visibility: visible;
