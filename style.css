@@ -769,6 +769,13 @@ p{
     transition: 0.5s;
     z-index: 999;
 }
+#pop-up6.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 999;
+}
 
 #cultural.active{
     top: 50%;
