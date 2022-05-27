@@ -91,6 +91,7 @@
             <div onclick="showEvent_4_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../technicals/coding-ninja.jpeg" alt=""></div>
             <div onclick="showEvent_5_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../technicals/autocad.jpeg" alt=""></div>
             <div onclick="showEvent_6_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../technicals/blackout.jpeg" alt=""></div>
+            <div onclick="showEvent_7_Details()" class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../technicals/coduino.jpeg" alt=""></div>
             
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
             <div class="col-6 col-md-3 p-1 poster-card"><img class="poster" src="../images/coming-soon.jpg" alt=""></div>
@@ -287,33 +288,52 @@
         <h2 style="font-family: 'Poppins'; margin-top: 5px; text-align: center; margin-top: 25px; color: #5428ad;     font-weight: 900;"> AUTOCAD</h2>
         <div class="popup-content">
           <p>
-            false;  - it's funny because it's true! 👾  <br><br>
-
-            Are you a tech geek who thinks coding is cool or that beginner standing baffled looking at the colossal world of coding? Whatever be your expertise level, if you have a thing for coding, then this competition is just for you! 🥳
-            <br><br>
-            Aagneya'22 in association with IEEE Computer Society SBC GECBH presents Blackout - a blind coding competition 👨🏻‍💻
-            <br><br>
-            Register as a team of 2👥 <br>
-            Registration fee: ₹50 per head 🪙 <br>
-
-            <br>
-            <a class="guidlines" href="http://bit.ly/Blackout_guidelines">GUIDELINES</a><br><br> 
-           
-            <br><br>
-            🗓️ Date: 3rd June, 2021 <br>
-            🕐 Time: 10:00 AM <br>
-            📍 Venue: Sree Chithira Thirunal Stadium, Poojappura, Thiruvananthapuram <br><br>
-
-            Prizes worth 8.5k await the winners! 🏆💫<br><br>
-
-            For more details, contact:<br>
-            Vinayak | 95455 67213<br>
-            Sai | 73068 15608<br>
+            
           </p>
       </div>
       <div
       style="display: block; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap;">
       <a href ="https://www.yepdesk.com/blackout" class="green-neon-btn" style="margin-bottom: 15px; width: 100%; text-align: center; margin-top: 0;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Register
+      </a>  
+    </div>
+    </div>
+  </div>
+    <div id="pop-up7" class="box" style="padding: 0; margin: 0;">
+      <div class="content-container">
+        <img onclick="showEvent_7_Details()" class="close-btn" src="../icon/Close-icon.png" alt="close">
+        <img class="poster-on-popup" style="width: 100%;height: auto;max-width: 300px;" src="../technicals/coduino.jpeg" alt="">
+        <h2 style="font-family: 'Poppins'; margin-top: 5px; text-align: center; margin-top: 25px; color: #5428ad;     font-weight: 900;"> CODUINO</h2>
+        <div class="popup-content">
+          <p>
+            "Programming isn't about what you know; it's about what you can figure out.” 
+                              - Chris Pine 
+              <br><br>
+              Aagneya'22 by GECBH in association with CSI GECBH presents CODUINO, an Arduino coding competition with two rounds. Compete individually using your coding skills and win prize worth ₹11k.
+
+              <br><br>
+            📌 Registration fee: ₹100 per head
+            <br><br>
+            <a class="guidlines" href="https://bit.ly/CODUINO_GUIDELINES">GUIDELINES</a><br><br>      
+
+            <br><br>
+
+            🗓️ Date: June 5, 2022  <br>
+
+            🕦 Time: 9:30 am <br><br>
+
+            Contact: <br>
+            Ardra: 7025405618<br>
+            Karthik: 7902358432<br>
+          </p>
+      </div>
+      <div
+      style="display: block; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap;">
+      <a href ="https://www.yepdesk.com/coduino" class="green-neon-btn" style="margin-bottom: 15px; width: 100%; text-align: center; margin-top: 0;">
         <span></span>
         <span></span>
         <span></span>
@@ -372,6 +392,14 @@
           let blur = document.getElementById('blur');
           blur.classList.toggle('active')
           let popup = document.getElementById('pop-up6');
+          popup.classList.toggle('active')
+          let html = document.getElementById('html');
+          html.classList.toggle('active')
+    }
+     function showEvent_7_Details() {
+          let blur = document.getElementById('blur');
+          blur.classList.toggle('active')
+          let popup = document.getElementById('pop-up7');
           popup.classList.toggle('active')
           let html = document.getElementById('html');
           html.classList.toggle('active')
