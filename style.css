@@ -945,7 +945,9 @@ p{
     background-size: 200% 200%;
     animation: animateGlow 10s ease infinite;
   }
-
+.guidlines:hover{
+  background: #ffff;
+}
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 .loader-body{
