@@ -822,6 +822,55 @@ p{
   transition: 0.5s;
   z-index: 999;
 }
+#pop-up9.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 999;
+}
+#pop-up10.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 999;
+}
+#pop-up11.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 999;
+}
+#pop-up12.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 999;
+}
+#pop-up13.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 999;
+}
+#pop-up14.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 999;
+}
+#pop-up15.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 999;
+}
 #cultural.active{
     top: 50%;
     visibility: visible;

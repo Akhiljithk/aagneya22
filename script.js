@@ -65,7 +65,7 @@ function showEvent_8_Details() {
 function showEvent_9_Details() {
   let blur = document.getElementById('blur');
   blur.classList.toggle('active')
-  let popup = document.getElementById('pop-up8');
+  let popup = document.getElementById('pop-up9');
   popup.classList.toggle('active')
   let html = document.getElementById('html');
   html.classList.toggle('active')
@@ -73,7 +73,7 @@ function showEvent_9_Details() {
 function showEvent_10_Details() {
   let blur = document.getElementById('blur');
   blur.classList.toggle('active')
-  let popup = document.getElementById('pop-up8');
+  let popup = document.getElementById('pop-up10');
   popup.classList.toggle('active')
   let html = document.getElementById('html');
   html.classList.toggle('active')
@@ -81,7 +81,7 @@ function showEvent_10_Details() {
 function showEvent_11_Details() {
   let blur = document.getElementById('blur');
   blur.classList.toggle('active')
-  let popup = document.getElementById('pop-up8');
+  let popup = document.getElementById('pop-up11');
   popup.classList.toggle('active')
   let html = document.getElementById('html');
   html.classList.toggle('active')
