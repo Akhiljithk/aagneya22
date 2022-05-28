@@ -871,6 +871,41 @@ p{
   transition: 0.5s;
   z-index: 999;
 }
+#pop-up16.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 999;
+}
+#pop-up17.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 999;
+}
+#pop-up18.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 999;
+}
+#pop-up19.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 999;
+}
+#pop-up20.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 999;
+}
 #cultural.active{
     top: 50%;
     visibility: visible;
