@@ -524,6 +524,34 @@ p{
     }
     /* cultural popup btn ends */
 
+    /* cultural popup btn  */
+    .green-neon-btn-cultural {
+      color: #ed2cff;
+    }
+    .green-neon-btn-cultural:link , .green-neon-btn:active {
+      color : #ffffff;
+    }
+    .green-neon-btn-cultural:hover {
+      background : #ed2cff;
+      box-shadow : 0 0 5px #ed2cff,
+                    0 0 25px #ed2cff,
+                  0 0 50px #ed2cff,
+                  0 0 200px #ed2cff;
+    }
+    .green-neon-btn-cultural span:nth-child(1) {
+      background : linear-gradient(90deg,transparent,#ed2cff);
+    }
+    .green-neon-btn-cultural span:nth-child(2) {
+      background : linear-gradient(180deg,transparent,#ed2cff);
+    }
+    .green-neon-btn-cultural span:nth-child(3) {
+      background : linear-gradient(90deg,transparent,#ed2cff);
+    }
+    .green-neon-btn-cultural span:nth-child(4) {
+      background : linear-gradient(90deg,transparent,#ed2cff);
+    }
+    /* cultural popup btn ends */
+
 
         /* cultural popup btn  */
         .green-neon-btn-others {
@@ -740,6 +768,10 @@ p{
 .others:after,
 .others:before{
   background: linear-gradient(235deg, #a11414, #010615, #a11414);
+}
+.cultural:after,
+.cultural:before{
+  background: linear-gradient(235deg, #d804ec, #010615, #db07ee);
 }
 .content-container{
   width: 98%;
@@ -981,7 +1013,7 @@ p{
     animation: animateGlow 10s ease infinite;
   }
 .guidlines:hover{
-  background: #ffff;
+  background: #ffff !important;
 }
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
