@@ -102,3 +102,11 @@ function showEvent_13_Details() {
   let html = document.getElementById('html');
   html.classList.toggle('active')
 }
+function showEvent_14_Details() {
+  let blur = document.getElementById('blur');
+  blur.classList.toggle('active')
+  let popup = document.getElementById('pop-up14');
+  popup.classList.toggle('active')
+  let html = document.getElementById('html');
+  html.classList.toggle('active')
+}
