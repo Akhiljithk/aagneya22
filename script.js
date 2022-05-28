@@ -134,3 +134,19 @@ function showEvent_17_Details() {
   let html = document.getElementById('html');
   html.classList.toggle('active')
 }
+function showEvent_18_Details() {
+  let blur = document.getElementById('blur');
+  blur.classList.toggle('active')
+  let popup = document.getElementById('pop-up18');
+  popup.classList.toggle('active')
+  let html = document.getElementById('html');
+  html.classList.toggle('active')
+}
+function showEvent_19_Details() {
+  let blur = document.getElementById('blur');
+  blur.classList.toggle('active')
+  let popup = document.getElementById('pop-up19');
+  popup.classList.toggle('active')
+  let html = document.getElementById('html');
+  html.classList.toggle('active')
+}
