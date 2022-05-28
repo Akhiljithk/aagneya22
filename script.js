@@ -126,3 +126,11 @@ function showEvent_16_Details() {
   let html = document.getElementById('html');
   html.classList.toggle('active')
 }
+function showEvent_17_Details() {
+  let blur = document.getElementById('blur');
+  blur.classList.toggle('active')
+  let popup = document.getElementById('pop-up17');
+  popup.classList.toggle('active')
+  let html = document.getElementById('html');
+  html.classList.toggle('active')
+}
